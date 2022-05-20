@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<title>Registro Nacional de Proveedores</title>
+</head>
+<body>
+
+<div id="grid">
+				<!-- header -->
+	<header id="header">
+		<a href="index.html"><img src="assets/logo_rnp.png" class="img_head"></a><p class="headerh1">Registro Nacional de Proveedores v5.0</p>
+	</header>
+				<!-- version -->
+	<div id="version">
+		<p class="actualizacion"><strong>Actualizado:</strong> 13/01/2022 18:10:52|V.5.5.4.003. PRB.A</p>
+	</div>
+				<!-- Content -->
+
+				<!-- Proveedores Nacionales -->
+	<div id="card_login">
+		<div id="header_login">
+			<img class="img_flex" src="assets/proveedor_nacional.png">
+			<div id="card_text">
+				<p class="subtitle">
+					Proveedor Nacional
+				<img src="assets/info_icon.png">
+				</p>
+				
+				<p class="description">Inicia sesión como Proveedor Nacional</p>
+				<p class="instruction">Utiliza los datos de la e.firma para ingresar, los datos con (*) son requeridos.</p>
+			</div>
+		</div>
+			<div id="container_login">
+				<div class="input">
+					<label class="label_style">Certificado (.cer)
+						<span class="obligatorios">*</span>:
+					</label>
+					<input type="text" placeholder="Ubicación del Certificado" readonly class="placeholder">
+						<label class="label_style">
+							<input type="file" name="Certificado" aria-label='Archivo' >
+						</label>
+				</div>
+
+				<div class="input">
+					<label class="label_style">Clave privada (.key)
+						<span class="obligatorios">*</span>:
+					</label>
+					<input type="text" placeholder="Ubicación de la Clave privada" readonly class="placeholder">
+						<label class="label_style">
+							<input type="file" name="Clave privada">
+						</label>
+				</div>
+				<div class="input">
+					<label class="label_style">Contraseña de la clave privada
+						<span class="obligatorios">*</span>:
+					</label>
+					<input type="password" name="Contraseña" placeholder="Escribe tu contraseña" class="placeholder">
+				</div>
+				<div id="iniciar_sesion">
+				<a href="pages/productos.html"><input class="btn_login" type="submit" name="Enviar" value="Iniciar sesión"></a>
+				</div>	
+			</div>
+			<div id="ayuda">
+				<p class="description">Ayuda Proveedores Nacionales</p>
+				<button>Requisitos</button>
+				<div>
+					<p>Es necesario contar con la e.firma vigente emitida por el SAT:</p>
+					<ul>
+						<li>RFC</li>
+						<li>Certificado (*.cer)</li>
+						<li>La clave privada e.firma (*.key)</li>
+						<li>Contraseña</li>
+					</ul>
+				</div>
+				<button>Recursos de Ayuda</button>
+				<div>
+					<ul>
+						<li>
+							<a href="assets/docs/pdf/Guia_numeraria_ordinaria_2022.pdf"target="_blank">
+							Numeraria de autofinanciamiento 2022
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button>Normatividad</button>
+				<div>
+					<ul>
+						<li>
+							<a href="assets/docs/pdf/Guia_numeraria_ordinaria_2022.pdf"target="_blank">
+							Numeraria de autofinanciamiento 2022
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button>Ayuda para emisión de CFDI</button>
+				<div>
+					<ul>
+						<li>
+							<a href="assets/docs/pdf/Guia_numeraria_ordinaria_2022.pdf"target="_blank">
+							Numeraria de autofinanciamiento 2022
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+				<!-- Proveedor Extranjero -->
+
+	<div id="card_login2">
+		<div id="header_login">
+			<img class="img_flex" src="assets/proveedor_extranjero.png">
+			<div id="card_text">
+				<p class="subtitle">
+					Proveedor Extranjero
+				<img src="assets/info_icon.png">
+				</p>
+				<p class="description">Inicia sesión como Proveedor Extranjero</p>
+			</div>
+		</div>
+		<form id="container_login">
+			<div class="input">
+				<label class="label_style">Id Fiscal
+					<span class="obligatorios">*</span>:
+				</label>
+				<input type="text" name="Id Fiscal" placeholder="Escribe tu Id" class="placeholder">
+			</div>
+			<div class="input">
+				<label class="label_style">Contraseña
+					<span class="obligatorios">*</span>:
+				</label>
+				<input type="password" name="Contraseña" placeholder="Escribe tu contraseña" class="placeholder">
+			</div>
+			<div id="enlaces_registro">
+				<span><a href="pages/olvide_contrasena.html">Olvidé mi contraseña</a></span>
+				<span><a href="pages/registrarme.html">¿Aún no estás registrado?</a></span>
+			</div>
+			<div id="iniciar_sesion">
+				<a href="pages/tablero.html"><input class="btn" type="submit" name="Enviar" value="Iniciar sesión"></a>
+			</div>
+		</form>
+			<div id="ayuda">
+				<p class="description">Ayuda Proveedores Extranjeros</p>
+				<button>Requisitos</button>
+				<div>
+					<p>Es necesario contar con la Id Fiscal vigente:</p>
+					<ul>
+						<li>RFC</li>
+						<li>Certificado (*.cer)</li>
+						<li>La clave privada e.firma (*.key)</li>
+						<li>Contraseña</li>
+					</ul>
+				</div>
+				<button>Recursos de Ayuda</button>
+				<div>
+					<ul>
+						<li>
+							<a href="assets/docs/pdf/Guia_numeraria_ordinaria_2022.pdf"target="_blank">
+							Numeraria de autofinanciamiento 2022
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button>Normatividad</button>
+				<div>
+					<ul>
+						<li>
+							<a href="assets/docs/pdf/Guia_numeraria_ordinaria_2022.pdf"target="_blank">
+							Numeraria de autofinanciamiento 2022
+							</a>
+						</li>
+					</ul>
+				</div>
+				<button>Ayuda para emisión de CFDI</button>
+				<div>
+					<ul>
+						<li>
+							<a href="assets/docs/pdf/Guia_numeraria_ordinaria_2022.pdf"target="_blank">
+							Numeraria de autofinanciamiento 2022
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+	<div id="card_consulta">
+		<div id="container_consulta">
+		<img class="img_flex" src="assets/consulta_ciudadana.png">
+		<div id="card_text">
+		<p class="subtitle">Consulta Ciudadana</p>
+			<p class="description">
+				Consulta las empresas y prestadores de servicios inscritos en el Registro Nacional de Proveedores que venden o arrendan sus productos o servicios a los partidos políticos, coaliciones y candidatos independientes.
+			</p>
+			<div id="consultar_btn">
+				<button class="btn">Consultar</button>
+			</div>
+		</div>
+			
+		</div>
+	</div>
+					<!-- footer -->
+	<footer id="footer_block">	
+			<a href="http://www.ine.mx/" target="_blank" title="Instituto Nacional Electoral"><img alt="logotipo INE México" src="assets/logo_ine_blanco.png" class="img_align" /> 
+			</a>
+			<p class="footer_p">
+			<strong>INE México 2022</strong>
+			</p>
+			<a class="footer_a" href=”https://cau.ine.mx/” target="_blank">CAU</a>
+			<p class="footer_p">
+			Unidad Técnica de Servicios de Informática
+			</p>
+			<p class="footer_p">Versión del Sistema 5.0/2022 </p>
+	</footer>
+
+</div>
+
+</body>
+</html>
